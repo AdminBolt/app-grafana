@@ -5,6 +5,7 @@
   "author": "AdminBolt",
   "license": "MIT",
   "adminIndexUrl": "{{PANEL_DOMAIN}}:47474",
+  "adminIndex": "app",
   "settings": {
       "iframe": true
   }
