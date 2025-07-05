@@ -55,5 +55,3 @@ sudo systemctl enable --now grafana-server
 # 7. Show status
 echo "=> Grafana is running on port $PORT:"
 sudo systemctl status grafana-server --no-pager
-
-echo "✅ Installation complete. Access Grafana at http://<your-server>:$PORT"

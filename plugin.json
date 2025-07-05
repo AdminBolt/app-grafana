@@ -3,5 +3,6 @@
   "version": "0.0.1",
   "description": "Grafana plugin for AdminBolt",
   "author": "AdminBolt",
-  "license": "MIT"
+  "license": "MIT",
+  "adminIndexUrl": "{{PANEL_DOMAIN}}:47474"
 }
