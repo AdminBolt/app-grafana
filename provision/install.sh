@@ -42,7 +42,8 @@ sudo dnf install -y "$PKG"
 
 # 4. Modify port in grafana.ini
 echo "=> Updating Grafana port to $PORT in grafana.ini..."
-sudo sed -i "s/^;*http_port = .*/http_port = $PORT/" /etc/grafana/grafana.ini
+rm -f /etc/grafana/grafana.ini  # Remove existing config to avoid conflicts
+cp /usr/local/bolt/plugins/grafana/config/grafana.ini /etc/grafana/grafana.ini
 
 # 5. Open port in firewall
 bolt-cli firewall --action=allow --port="$PORT"
