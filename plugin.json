@@ -4,5 +4,7 @@
   "description": "Grafana plugin for AdminBolt",
   "author": "AdminBolt",
   "license": "MIT",
+  "adminIndex": "app/public",
   "adminIndexUrl": "{{PANEL_DOMAIN}}:47474"
+
 }
