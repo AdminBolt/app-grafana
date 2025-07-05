@@ -4,9 +4,8 @@
   "description": "Grafana plugin for AdminBolt",
   "author": "AdminBolt",
   "license": "MIT",
-  "adminIndex": "app",
   "adminIndexUrl": "{{PANEL_DOMAIN}}:47474",
   "settings": {
-    "iframe": true
+      "iframe": true
   }
 }

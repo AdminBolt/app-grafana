@@ -48,6 +48,13 @@ cp /usr/local/bolt/plugins/grafana/config/grafana.ini /etc/grafana/grafana.ini
 # 5. Open port in firewall
 bolt-cli firewall --action=allow --port="$PORT"
 
+ln -s /usr/local/bolt/ssl/bolt.key /etc/grafana/grafana.key
+ln -s /usr/local/bolt/ssl/bolt.chain /etc/grafana/grafana.crt
+
+# Make sure the grafana user can access the certificate
+sudo chown grafana:grafana /etc/grafana/grafana.crt /etc/grafana/grafana.key
+sudo chmod 600 /etc/grafana/grafana.crt /etc/grafana/grafana.key
+
 # 6. Enable and start Grafana
 echo "=> Enabling and starting grafana-server..."
 sudo systemctl daemon-reload
