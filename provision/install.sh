@@ -60,6 +60,8 @@ echo "=> Enabling and starting grafana-server..."
 sudo systemctl daemon-reload
 sudo systemctl enable --now grafana-server
 
+systemctl restart grafana-server
+
 # 7. Show status
 echo "=> Grafana is running on port $PORT:"
 sudo systemctl status grafana-server --no-pager
