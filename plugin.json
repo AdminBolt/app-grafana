@@ -1,0 +1,7 @@
+{
+  "name": "Grafana",
+  "version": "0.0.1",
+  "description": "Grafana plugin for AdminBolt",
+  "author": "AdminBolt",
+  "license": "MIT"
+}
